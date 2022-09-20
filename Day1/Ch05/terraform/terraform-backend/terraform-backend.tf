@@ -21,7 +21,7 @@ resource "aws_dynamodb_table" "test-ddb-tf-lock" {
   }
 
   tags = {
-    "Name" = "skt-user00-test-s3-ddb-tflock"
+    "Name" = "skt-user11-test-s3-ddb-tflock"
   }
 
 }
