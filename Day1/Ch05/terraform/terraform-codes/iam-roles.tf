@@ -21,12 +21,12 @@ POLICY
 
 resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-cluster" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
-  role       = aws_iam_role.test-iam-role-eks-cluster.name
+  role       = aws_iam_role.skt-user11-test-iam-role-eks-cluster.name
 }
 
 resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-cluster-vpc" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
-  role       = aws_iam_role.test-iam-role-eks-cluster.name
+  role       = aws_iam_role.skt-user11-test-iam-role-eks-cluster.name
 }
 
 
