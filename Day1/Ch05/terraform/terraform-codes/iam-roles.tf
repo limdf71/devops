@@ -32,8 +32,8 @@ resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-cluster-vpc" {
 
 ############ eks nodegroup iam role ############
 
-resource "aws_iam_role" "test-iam-role-eks-nodegroup" {
-  name = "test-iam-role-eks-nodegroup"
+resource "aws_iam_role" "skt-user11-test-iam-role-eks-nodegroup" {
+  name = "skt-user11-test-iam-role-eks-nodegroup"
 
   assume_role_policy = <<POLICY
 {
