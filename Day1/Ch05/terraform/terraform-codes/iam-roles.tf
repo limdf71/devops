@@ -53,15 +53,15 @@ POLICY
 
 resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-nodegroup" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
-  role       = aws_iam_role.test-iam-role-eks-nodegroup.name
+  role       = aws_iam_role.skt-user11-test-iam-role-eks-nodegroup.name
 }
 
 resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-nodegroup-cni" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
-  role       = aws_iam_role.test-iam-role-eks-nodegroup.name
+  role       = aws_iam_role.skt-user11-test-iam-role-eks-nodegroup.name
 }
 
 resource "aws_iam_role_policy_attachment" "test-iam-policy-eks-nodegroup-ecr" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
-  role       = aws_iam_role.test-iam-role-eks-nodegroup.name
+  role       = aws_iam_role.skt-user11-test-iam-role-eks-nodegroup.name
 }
